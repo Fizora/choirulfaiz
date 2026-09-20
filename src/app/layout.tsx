@@ -3,15 +3,15 @@ import {
   Bricolage_Grotesque,
   Geist,
   Geist_Mono,
+  Google_Sans,
   IBM_Plex_Serif,
   Noto_Serif_JP,
 } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
 
-const geistSans = Bricolage_Grotesque({
+const geistSans = Google_Sans({
   variable: "--font-sans",
-  weight: "400",
   subsets: ["latin"],
 });
 
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scrollbar-thin `}
+      className={`${geistSans.variable} ${geistMono.variable} h-full text-sm antialiased scrollbar-thin `}
     >
       <body className="min-h-full flex flex-col">
         <LenisProvider>{children}</LenisProvider>
