@@ -4,6 +4,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 import Navbar from "@/components/Navbar";
 import { allProjects } from "@/components/constant/data";
 import Footer from "@/components/Footer";
+import CTA from "@/components/sections/CTA";
 
 export default function Project() {
   return (
@@ -12,19 +13,19 @@ export default function Project() {
 
       <main className="pt-24">
         <section className="min-h-screen">
-          <div className="container mx-auto px-4 py-20">
+          <div className="max-w-7xl mx-auto px-4 py-20">
             {/* Header */}
-            <div className="space-y-6 border-b border-gray-300 py-20">
+            <div className="space-y-6 border-b border-gray-950 py-20">
               <p className="uppercase tracking-[0.22em] text-sm text-gray-500">
                 Selected work
               </p>
 
-              <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
-                <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
+              <div className="flex flex-col justify-between gap-8 md:flex-row">
+                <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl text-white">
                   A collection of things I&apos;ve made.
                 </h1>
 
-                <p className="max-w-sm text-lg leading-relaxed text-gray-600">
+                <p className="max-w-md text-xl leading-relaxed text-gray-400">
                   A selection of product, brand, and web experiences designed to
                   make digital products clearer and more useful.
                 </p>
@@ -61,16 +62,16 @@ export default function Project() {
                   {/* Project information */}
                   <div className="flex justify-between gap-6 py-5">
                     <div className="space-y-4">
-                      <h2 className="text-3xl transition-all duration-300 group-hover:underline">
+                      <h2 className="text-3xl transition-all duration-300 text-white">
                         {project.name}
                       </h2>
 
-                      <p className="max-w-sm text-lg leading-relaxed text-gray-600">
+                      <p className="max-w-sm text-lg leading-relaxed text-gray-400">
                         {project.desc}
                       </p>
                     </div>
 
-                    <div className="shrink-0 space-y-6 text-right text-sm text-gray-500">
+                    <div className="shrink-0 space-y-6 text-right text-sm text-gray-400">
                       <p>{project.type}</p>
                       <p>{project.year}</p>
                     </div>
@@ -79,6 +80,7 @@ export default function Project() {
               ))}
             </div>
           </div>
+          <CTA />
         </section>
       </main>
       <Footer />

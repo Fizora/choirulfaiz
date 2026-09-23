@@ -5,6 +5,7 @@ import {
   Geist_Mono,
   Google_Sans,
   IBM_Plex_Serif,
+  Michroma,
   Noto_Serif_JP,
 } from "next/font/google";
 import "./globals.css";
@@ -15,15 +16,16 @@ const geistSans = Google_Sans({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Michroma({
   variable: "--font-mono",
+  weight: "400",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Choirul Faiz - Software Engineer",
   description:
-    "Full Stack Engineer - Base in Indonesia - Web Developer for High Quality f&b landing page & Real Estate landing page ",
+    "Full Stack Engineer - Base in Indonesia - Web Developer for High Quality Website",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

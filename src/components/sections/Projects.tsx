@@ -5,19 +5,21 @@ import Image from "next/image";
 
 const Project = () => {
   return (
-    <section className="min-h-screen border-t border-gray-300">
+    <section className="min-h-screen border-t border-gray-950">
       {/* layer layout */}
-      <div className="mx-auto container py-20 px-4">
+      <div className="mx-auto max-w-7xl py-20 px-4">
         {/* header */}
         <div className="space-y-6">
-          <p className=" uppercase tracking-[0.22em]">Selected work</p>
-          <div className="flex flex-col md:flex-row md:items-end justify-between">
-            <h2 className="text-4xl md:text-6xl font-bold">
+          <p className="uppercase tracking-[0.22em] text-gray-400">
+            Selected work
+          </p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between space-y-6">
+            <h2 className="text-white text-4xl md:text-6xl font-bold">
               A few things I've made.
             </h2>
             <Link
               href="/project"
-              className="flex items-center max-w gap-4 text-xl hover:underline py-1 px-2 hover:bg-gray-300 transition-all duration-300"
+              className="flex items-center w-max bg-gray-300 gap-4 text-xl hover:underline py-2 px-8 hover:bg-gray-300 transition-all duration-300 rounded-md"
             >
               See More Project
               <LuArrowUpRight></LuArrowUpRight>
@@ -51,14 +53,12 @@ const Project = () => {
 
                 <div className="py-5 flex justify-between space-y-6">
                   <div className="space-y-4">
-                    <h3 className="text-3xl group-hover:underline">
-                      {project.name}
-                    </h3>
-                    <p className="max-w-sm text-xl text-gray-600">
+                    <h3 className="text-3xl text-white">{project.name}</h3>
+                    <p className="max-w-sm text-lg text-gray-400">
                       {project.desc}
                     </p>
                   </div>
-                  <div className="text-right space-y-6">
+                  <div className="text-right space-y-6 text-gray-400">
                     <p>{project.type}</p>
                     <p>{project.year}</p>
                   </div>
@@ -67,8 +67,6 @@ const Project = () => {
             ))}
           </div>
         </div>
-        {/* content */}
-        <div className=""></div>
       </div>
     </section>
   );

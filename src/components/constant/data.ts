@@ -1,7 +1,7 @@
 // Projects
 export const highlightProject = [
   {
-    img: "/project-1.webp",
+    img: "/project-7.webp",
     name: "North Star",
     desc: "A calmer way for teams to plan, focus, and ship meaningful work.",
     type: "Product design",
@@ -9,7 +9,7 @@ export const highlightProject = [
     year: "2026",
   },
   {
-    img: "/project-2.webp",
+    img: "/project-8.webp",
     name: "Sora Studio",
     desc: "A visual identity and digital home for a new generation of makers.",
     type: "Brand & web",
@@ -39,7 +39,7 @@ export const allProjects = [
   },
   {
     id: "atlas-finance",
-    img: "/project-2.webp",
+    img: "/project-3.webp",
     name: "Atlas Finance",
     desc: "A clearer financial dashboard for people building better money habits.",
     type: "Web application",
@@ -48,7 +48,7 @@ export const allProjects = [
   },
   {
     id: "field-notes",
-    img: "/project-1.webp",
+    img: "/project-4.webp",
     name: "Field Notes",
     desc: "A thoughtful publishing platform for independent writers and creators.",
     type: "Editorial platform",
@@ -57,7 +57,7 @@ export const allProjects = [
   },
   {
     id: "morrow-house",
-    img: "/project-1.webp",
+    img: "/project-5.webp",
     name: "Morrow House",
     desc: "A refined digital home for a hospitality brand built around slow living.",
     type: "Hospitality & web",
@@ -66,7 +66,7 @@ export const allProjects = [
   },
   {
     id: "kindred-health",
-    img: "/project-2.webp",
+    img: "/project-6.webp",
     name: "Kindred Health",
     desc: "A more human way for patients to discover care and book appointments.",
     type: "Healthcare product",
@@ -75,7 +75,7 @@ export const allProjects = [
   },
   {
     id: "common-ground",
-    img: "/project-2.webp",
+    img: "/project-7.webp",
     name: "Common Ground",
     desc: "A community platform helping local teams organize meaningful events.",
     type: "Community platform",
@@ -84,7 +84,7 @@ export const allProjects = [
   },
   {
     id: "form-and-function",
-    img: "/project-1.webp",
+    img: "/project-8.webp",
     name: "Form & Function",
     desc: "A digital catalogue for a studio making useful objects for everyday life.",
     type: "E-commerce experience",
@@ -100,10 +100,10 @@ export const pricingList = [
     price: "From $765",
     desc: "For a focused launch that gives your business a polished, credible home online.",
     feature: [
-      "Up to 5 pages",
+      "Up to 1 pages",
       "Responsive design",
       "WhatsApp / contact CTA",
-      "Launch-ready in 2–3 weeks",
+      "Launch-ready in 5 days",
     ],
     href: "/contact?plan=starter",
     linkName: "Discuss your project",
@@ -115,10 +115,11 @@ export const pricingList = [
     price: "From $1,500",
     desc: "For brands ready to stand out, explain their value, and turn more visits into enquiries.",
     feature: [
-      "Up to 10 pages",
+      "Up to 4 pages",
       "Custom visual direction",
       "SEO foundations",
       "Conversion-focused structure",
+      "Launch-ready in 7 days",
     ],
     href: "/contact?plan=growth",
     linkName: "Choose the right fit",
@@ -131,10 +132,12 @@ export const pricingList = [
     price: "From $2,500",
     desc: "For ambitious teams that need a distinctive digital experience built around their next stage.",
     feature: [
+      "Up to 8 pages",
       "Strategy + custom design",
       "Advanced interactions",
       "CMS or property listings",
       "Post-launch support",
+      "Launch-ready in 14 days",
     ],
     href: "/contact?plan=signature",
     linkName: "Plan something bigger",

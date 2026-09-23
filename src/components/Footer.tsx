@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   const socialMediaLinks = [
     {
@@ -15,37 +17,34 @@ const Footer = () => {
   ];
 
   return (
-    <footer
-      aria-label="Footer"
-      className="border-t border-white/10 bg-black text-white"
-    >
-      <div className="mx-auto flex w-full container flex-col gap-8 px-6 py-10 sm:px-8 lg:px-12">
-        {/* Main footer content */}
-        <div className="flex flex-col justify-between gap-8 md:flex-row md:items-start">
+    <footer aria-label="Footer" className=" bg-black text-white">
+      <div className="mx-auto w-full max-w-7xl py-16">
+        {/* Main content */}
+        <div className="px-4 flex flex-col gap-12 md:flex-row md:items-start md:justify-between pb-40">
           {/* Brand */}
-          <div className="max-w-sm">
+          <div className="max-w-md">
             <a
               href="/"
-              className="inline-block text-xl font-bold tracking-tight text-white transition-colors hover:text-zinc-300"
+              className="inline-block text-2xl font-semibold tracking-tight text-white transition-colors hover:text-zinc-300 font-mono"
             >
-              Fizoraa
+              MCF - DEV
             </a>
 
-            <p className="mt-3 text-xl leading-relaxed text-zinc-400">
+            <p className="mt-5 text-xl leading-relaxed text-zinc-400">
               Full-stack developer building modern, reliable, and
               conversion-focused digital experiences.
             </p>
           </div>
 
           {/* Social links */}
-          <nav aria-label="Social media" className="flex flex-col gap-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+          <nav aria-label="Social media" className="flex flex-col gap-5">
+            <p className="text-xs font-medium uppercase tracking-[0.25em] text-zinc-500">
               Connect
             </p>
 
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <div className="flex flex-col gap-3 sm:flex-row sm:gap-8">
               {socialMediaLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
                   href={link.url}
                   target="_blank"
@@ -54,16 +53,17 @@ const Footer = () => {
                   className="text-xl text-zinc-400 transition-colors duration-200 hover:text-white"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </nav>
         </div>
 
-        {/* Bottom footer */}
-        <div className="flex flex-col gap-3 border-t border-white/10 pt-6 text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>&copy; {new Date().getFullYear()} Fizoraa. All rights reserved.</p>
-
+        {/* Bottom */}
+        <div className="px-4 mt-16 flex flex-col gap-4 border-t border-white/5 pt-8  text-zinc-500 sm:flex-row sm:items-center sm:justify-between text-sm">
+          <p>
+            &copy; {new Date().getFullYear()} MCF - DEV. All rights reserved.
+          </p>
           <p>Designed and built with care.</p>
         </div>
       </div>

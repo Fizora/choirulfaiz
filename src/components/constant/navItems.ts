@@ -1,8 +1,9 @@
 // Navbar links
 export const navbarLinks = [
-  { name: "Project", href: "/project" },
+  { name: "Home", href: "/" },
+  { name: "Project", href: "/projects" },
   { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Contact", href: "mailto:moch.choirulfaiz2008@gmail.com" },
 ];
 
 // Footer links
