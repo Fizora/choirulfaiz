@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Project = () => {
   return (
-    <section className="min-h-screen border-t border-gray-950">
+    <section className="min-h-screen border-t border-gray-950 mt-40 lg:mt-20">
       {/* layer layout */}
       <div className="mx-auto max-w-7xl py-20 px-4">
         {/* header */}
@@ -19,7 +19,7 @@ const Project = () => {
             </h2>
             <Link
               href="/project"
-              className="flex items-center w-max bg-gray-300 gap-4 text-xl hover:underline py-2 px-8 hover:bg-gray-300 transition-all duration-300 rounded-md"
+              className="flex items-center w-max text-white gap-4 text-xl hover:underline py-2 px-8  transition-all duration-300 rounded-md"
             >
               See More Project
               <LuArrowUpRight></LuArrowUpRight>

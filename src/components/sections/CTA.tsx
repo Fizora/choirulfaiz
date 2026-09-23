@@ -11,14 +11,14 @@ const CTA = () => {
             alt="Modern business background"
             src="/img/build.jpg"
             fill
-            className="object-cover object-center opacity-60 rounded mask-b-from-50% mask-b-to-90% "
+            className="object-cover object-center opacity-60 rounded mask-t-from-70% mask-t-to-90% mask-b-from-50% "
             priority
           />
         </div>
       </div>
 
       {/* Dark overlay for better readability */}
-      <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/10 to-black/99 backdrop:" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/10 to-black/99 " />
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-32 sm:px-8 lg:px-12 lg:py-40">

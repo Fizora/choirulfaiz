@@ -4,7 +4,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 
 const Pricing = () => {
   return (
-    <section className="bg-black py-24 md:py-32 min-h-screen">
+    <section className="bg-black py-24 md:py-32 min-h-screen" id="pricing">
       <div className="mx-auto max-w-7xl px-4">
         {/* Header */}
         <div className="mb-12 space-y-6 md:mb-14">
@@ -34,8 +34,8 @@ const Pricing = () => {
                 key={pricing.id}
                 className={`flex min-h-98.75 flex-col border p-7 md:p-8 ${
                   isDark
-                    ? "border-zinc-700 bg-zinc-900 text-white"
-                    : "border-zinc-800 bg-zinc-950 text-white"
+                    ? "border-orange-700/30 bg-linear-to-br  via-orange-500/15 text-white"
+                    : "border-zinc-800 bg-linear-to-br  from-orange-700/30 to-zinc-950 text-white"
                 }`}
               >
                 {/* Plan title */}

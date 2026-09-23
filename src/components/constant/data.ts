@@ -16,6 +16,24 @@ export const highlightProject = [
     href: "https://sorastudio.vercel.app",
     year: "2026",
   },
+  {
+    id: "atlas-finance",
+    img: "/project-5.webp",
+    name: "Atlas Finance",
+    desc: "A clearer financial dashboard for people building better money habits.",
+    type: "Web application",
+    href: "https://atlas-finance.vercel.app",
+    year: "2026",
+  },
+  {
+    id: "field-notes",
+    img: "/project-4.webp",
+    name: "Field Notes",
+    desc: "A thoughtful publishing platform for independent writers and creators.",
+    type: "Editorial platform",
+    href: "https://field-notes.vercel.app",
+    year: "2026",
+  },
 ];
 
 export const allProjects = [

@@ -16,10 +16,10 @@ export const PrimaryButtonLink = ({
   return (
     <Link
       href={href}
-      className={`group flex items-center justify-between gap-4 rounded-md  bg-white py-2 pl-8 pr-2 font-medium text-black  duration-200 ${className}`}
+      className={`group flex items-center justify-between gap-4 rounded-md bg-orange-500 py-2 pl-8 pr-2 text-lg font-medium text-white  duration-200 ${className} backdrop-blur-lg duration-300  hover:bg-orange-600 hover:shadow-[0px_0px_25px_5px] shadow-orange-500/30 active:scale-90 transition-all`}
     >
       {children}
-      <span className="relative grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-md bg-white text-black">
+      <span className="relative grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-md">
         {/* Default: Chevron. Hover: geser keluar ke kiri lalu hilang */}
         <LuChevronRight
           size={18}
@@ -43,7 +43,7 @@ export const SecondaryButtonLink = ({
   return (
     <Link
       href={href}
-      className={`group flex items-center justify-between gap-2 rounded-md bg-white/20 backdrop-blur-2xl px-8 py-2 font-medium text-white transition-colors duration-200 hover:bg-white/30 ${className}`}
+      className={`group flex items-center justify-between gap-2 rounded-md bg-white/20 backdrop-blur-lg pl-8 py-2 pr-2 text-lg font-medium text-white transition-colors duration-200 hover:bg-white/30 ${className}`}
     >
       {children}
       <span className="relative grid h-9 w-9 shrink-0 place-items-center overflow-hidden">

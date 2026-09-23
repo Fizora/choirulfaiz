@@ -61,22 +61,18 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full bg-black/30 py-4 backdrop-blur-3xl  transition-transform duration-300 ease-in-out  ${
+      className={`fixed left-0 top-0 z-50 w-full bg-transparent py-4 backdrop-blur-3xl  transition-transform duration-300 ease-in-out  ${
         shouldHide ? "-translate-y-full" : "translate-y-0"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link
-            href="/"
-            onClick={closeMenu}
-            className="text-xl tracking-tight text-white"
-          >
+          <a href="/" className="text-xl tracking-tight text-white">
             <div className="font-black tracking-[0.22em] font-mono">
               MCF - DEV
             </div>
-          </Link>
+          </a>
 
           {/* Desktop navigation */}
           <nav className="hidden items-center gap-3 md:flex">
@@ -94,7 +90,7 @@ const Navbar = () => {
               href="https://wa.me/085235086814"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 flex items-center gap-3 rounded-md bg-white px-6 py-2 text-lg font-medium text-black transition-transform duration-200 hover:scale-105 hover:bg-gray-100 active:scale-95"
+              className="ml-2 flex items-center gap-3 rounded-md bg-orange-500 text-white px-6 py-2 text-lg font-medium duration-300 hover:bg-orange-600 shadow-[0px_0px_25px_5px] shadow-orange-500/30"
             >
               Chat Me
               <LuArrowUpRight size={20} />
@@ -151,7 +147,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeMenu}
-                className="mt-2 flex items-center justify-center gap-3 rounded-md bg-white px-4 py-3 text-lg font-medium text-black "
+                className="mt-2 flex items-center gap-3 rounded-md bg-orange-500 text-white px-6 py-2 text-lg font-medium duration-300 hover:bg-orange-600 shadow-[0px_0px_25px_5px] shadow-orange-500/30"
               >
                 Chat Me
                 <LuArrowUpRight size={20} />
