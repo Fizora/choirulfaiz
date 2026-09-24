@@ -15,9 +15,9 @@ const Hero = () => {
             playsInline
             preload="auto"
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover object-center opacity-60 rounded mask-t-from-10% mask-t-to-100% mask-b-from-40%"
+            className="absolute inset-0 h-full w-full object-cover object-center opacity-60 rounded mask-b-from-60% mask-t-from-40%"
           >
-            <source src="/video/1.mp4" type="video/mp4" />
+            <source src="/video/2.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
