@@ -14,14 +14,21 @@ const Project = () => {
             Selected work
           </p>
           <div className="flex flex-col md:flex-row md:items-end justify-between space-y-6">
-            <h2 className="text-white text-4xl md:text-6xl font-bold">
-              A few things I've made.
-            </h2>
+            <div className="space-y-6 max-w-2xl">
+              <h2 className="text-white text-4xl md:text-6xl font-bold">
+                A selection of websites I've designed and built.
+              </h2>
+              <p className="text-lg text-gray-400 max-w-xl">
+                From hospitality and real estate to household services, these
+                projects explore how modern design, performance, and clear user
+                journeys can work together.
+              </p>
+            </div>
             <Link
               href="/project"
               className="flex items-center w-max text-white gap-4 text-xl hover:underline py-2 px-8  transition-all duration-300 rounded-md"
             >
-              See More Project
+              View All Project
               <LuArrowUpRight></LuArrowUpRight>
             </Link>
           </div>

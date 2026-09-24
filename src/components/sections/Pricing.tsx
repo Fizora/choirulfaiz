@@ -9,17 +9,18 @@ const Pricing = () => {
         {/* Header */}
         <div className="mb-12 space-y-6 md:mb-14">
           <p className="font-medium uppercase tracking-[0.22em] text-zinc-500">
-            Simple project pricing
+            Simple, transparent pricing
           </p>
 
           <div className="flex flex-col justify-between gap-8 md:flex-row">
             <h2 className="max-w-3xl text-4xl font-medium leading-[0.98] tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              A clear path from idea to launch.
+              A website built around what your business actually needs.
             </h2>
 
             <p className="max-w-xl text-lg leading-relaxed text-zinc-400 md:pb-1">
-              Every project is scoped around your goals, content, and the kind
-              of customer you want to attract.
+              Every project is scoped around your business, content, customers,
+              and the level of functionality your website requires. No
+              unnecessary complexity.
             </p>
           </div>
         </div>

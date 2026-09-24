@@ -4,7 +4,7 @@ const Footer = () => {
   const socialMediaLinks = [
     {
       name: "Instagram",
-      url: "https://www.instagram.com/fizoraa/",
+      url: "https://www.instagram.com/fizoraaa/",
     },
     {
       name: "LinkedIn",

@@ -11,23 +11,29 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="py-30 space-y-6">
             <p className="uppercase tracked-[0.22rem] text-gray-500">
-              A little context
+              A little about me
             </p>
             <h2 className="text-4xl md:text-6xl font-bold text-white">
-              Design is how I make sense of things.
+              I build websites where design and performance work together.
             </h2>
           </div>
           <div className="flex flex-col md:flex-row md:items-center justify-between py-40 space-y-6">
             <h2 className="text-4xl md:text-6xl max-w-3xl text-white">
-              I work at the intersection of strategy, design, and technology —
-              turning the messy first draft into something people want to use.
+              I work across three main industries: restaurants & cafés, property
+              & real estate, and household services. Each project starts with
+              understanding the business, its customers, and the action the
+              website needs to drive before moving into design and development.
             </h2>
             <div className="max-w-lg text-xl text-gray-400">
               <p>
-                I'm an independent solo developer based in East java, Indonesia.
-                Over the past eight years, I've partnered with early-stage
-                founders and established teams to make digital products more
-                human.
+                I'm an independent web developer from East Java, Indonesia,
+                focused on building modern websites for businesses that want a
+                stronger presence online. My work combines thoughtful interface
+                design, performance-focused development, and clear user journeys
+                — so a website doesn't just look good, but helps visitors
+                understand the business and take the next step. I'm currently
+                developing my portfolio while building Lumentify, a web
+                development platform focused on household service businesses.
               </p>
               <br />
               <p>

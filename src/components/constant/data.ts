@@ -114,9 +114,9 @@ export const allProjects = [
 export const pricingList = [
   {
     id: "starter",
-    title: "STARTER SITE",
+    title: "ESSENTIAL",
     price: "From $765",
-    desc: "For a focused launch that gives your business a polished, credible home online.",
+    desc: "For businesses that need a polished, fast, and responsive website with everything customers need to understand the business and get in touch.",
     feature: [
       "Up to 1 pages",
       "Responsive design",

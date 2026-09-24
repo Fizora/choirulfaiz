@@ -7,31 +7,37 @@ const Hero = () => {
   return (
     <section className="relative flex flex-col justify-center min-h-screen">
       <div className="absolute inset-y-0 inset-x-0 flex justify-center">
-        <div className="relative h-full w-full">
-          <Image
-            alt="Modern business background"
-            src="/img/new-hero.jpeg"
-            fill
-            className="object-cover object-center opacity-60 rounded mask-t-from-10% mask-t-to-100% mask-b-from-50% "
-            priority
-          />
+        <div className="relative h-full w-full overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover object-center opacity-60 rounded mask-t-from-10% mask-t-to-100% mask-b-from-40%"
+          >
+            <source src="/video/1.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
-      <div className="absolute inset-0 py-40">
+
+      {/* dari absolute inset-0 jadi relative — biar section ikut membesar mengikuti konten */}
+      <div className="relative z-10 py-40">
         <div className="mx-auto w-full max-w-7xl space-y-6 px-4 py-10">
           <p className="uppercase tracking-[0.22em] text-white">
-            MCF · Independent web designer & developer
+            Independent Web Developer · East Java, Indonesia
           </p>
           <h1 className="text-white max-w-6xl text-5xl font-bold leading-tight tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl">
-            Stop Losing High-Value Customers to Slow Websites
+            Fast Websites. Modern Experiences. Built to Convert.
           </h1>
-          {/* <p className="max-w-2xl leading-relaxed text-xl">
-          I build sub-second, high-converting websites for F&B, real estate, and
-          scaling businesses. Turn everyday site visitors into loyal, paying
-          clients.
-        </p> */}
-          <div className="text-white bg-orange-400/20 backdrop-blur-sm flex items-center gap-2 w-max rounded-full p-1.5 px-3">
-            <span className="relative flex  size-3">
+          {/* <p className="max-w-2xl leading-relaxed text-xl text-white">
+            I design and develop high-performance websites for restaurants,
+            property businesses, and household service companies — combining
+            modern interfaces, fast load times, and clear user journeys.
+          </p> */}
+          <div className="text-white bg-orange-400/10 backdrop-blur-sm flex items-center gap-2 w-max rounded-full p-1.5 px-3">
+            <span className="relative flex size-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-400 opacity-75"></span>
               <span className="relative inline-flex size-3 rounded-full bg-orange-500"></span>
             </span>{" "}
@@ -41,17 +47,17 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row md:items-center justify-between py-20">
             <div className="flex flex-col md:flex-row md:items-center gap-4">
               <PrimaryButtonLink href="https://wa.me/085235086814">
-                Start Your Project
+                Start a Project
               </PrimaryButtonLink>
               <SecondaryButtonLink href="/projects">
-                See Projects
+                View Projects
               </SecondaryButtonLink>
             </div>
-            <div className="max-w-lg leading-relaxed pt-10 text-white text-lg">
+            <div className="max-w-xl leading-relaxed pt-10 text-white text-xl">
               <p>
-                I build sub-second, high-converting websites for F&B, real
-                estate, and scaling businesses. Turn everyday site visitors into
-                loyal, paying clients.
+                From first impression to final click, every part of the website
+                is designed to make your business clearer, more credible, and
+                easier to choose.
               </p>
             </div>
           </div>
