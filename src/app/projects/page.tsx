@@ -13,14 +13,14 @@ export default function Project() {
 
       <main className="pt-24">
         <section className="min-h-screen">
-          <div className="max-w-7xl mx-auto px-4 py-20">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-20">
             {/* Header */}
             <div className="space-y-6 border-b border-gray-950 py-20">
               <p className="uppercase tracking-[0.22em] text-sm text-gray-500">
                 Selected work
               </p>
 
-              <div className="flex flex-col justify-between gap-8 md:flex-row">
+              <div className="flex flex-col justify-between gap-8 lg:flex-row">
                 <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl text-white">
                   A collection of things I&apos;ve made.
                 </h1>

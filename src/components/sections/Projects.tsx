@@ -7,13 +7,13 @@ const Project = () => {
   return (
     <section className="min-h-screen border-t border-gray-950 mt-40 lg:mt-20">
       {/* layer layout */}
-      <div className="mx-auto max-w-7xl py-20 px-4">
+      <div className="mx-auto max-w-7xl py-20 px-4 md:px-8">
         {/* header */}
         <div className="space-y-6">
           <p className="uppercase tracking-[0.22em] text-gray-400">
             Selected work
           </p>
-          <div className="flex flex-col md:flex-row md:items-end justify-between space-y-6">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between space-y-6">
             <div className="space-y-6 max-w-2xl">
               <h2 className="text-white text-4xl md:text-6xl font-bold">
                 A selection of websites I've designed and built.
@@ -26,10 +26,10 @@ const Project = () => {
             </div>
             <Link
               href="/project"
-              className="flex items-center w-max text-white gap-4 text-xl hover:underline py-2 px-8  transition-all duration-300 rounded-md"
+              className="group flex items-center w-max text-white gap-4 text-xl py-2 px-8 transition-all duration-300 rounded-md border border-white/20 hover:bg-white/20"
             >
               View All Project
-              <LuArrowUpRight></LuArrowUpRight>
+              <LuArrowUpRight className="group-hover:transform group-hover:translate-x-3 group-hover:rotate-45 transition-all duration-200"></LuArrowUpRight>
             </Link>
           </div>
 

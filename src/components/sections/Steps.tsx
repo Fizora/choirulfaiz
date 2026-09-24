@@ -43,7 +43,7 @@ const steps: Step[] = [
 const Steps = () => {
   return (
     <section className=" py-24 md:py-32 min-h-screen">
-      <div className="mx-auto container max-w-7xl px-4">
+      <div className="mx-auto container max-w-7xl px-4 md:px-8">
         {/* Header */}
         <div className="mb-16 max-w-3xl md:mb-20">
           <p className="mb-6 text-sm font-medium uppercase tracking-[0.22em] text-gray-500">

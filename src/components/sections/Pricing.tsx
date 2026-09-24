@@ -5,7 +5,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 const Pricing = () => {
   return (
     <section className="bg-black py-24 md:py-32 min-h-screen" id="pricing">
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
         {/* Header */}
         <div className="mb-12 space-y-6 md:mb-14">
           <p className="font-medium uppercase tracking-[0.22em] text-zinc-500">

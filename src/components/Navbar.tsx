@@ -130,13 +130,13 @@ const Navbar = () => {
                 {isMenuOpen ? <LuX size={25} /> : <LuMenu size={25} />}
               </button>
             </div>
-            <div className="flex flex-col gap-1 justify-center">
+            <div className="flex flex-col gap-1 justify-center py-10">
               {navbarLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={closeMenu}
-                  className=" px-4 py-3 text-lg font-medium text-gray-400 transition-colors duration-200 hover:bg-gray-100 hover:text-black"
+                  className="rounded-md px-4 py-2.5 text-lg font-medium text-gray-400 transition-colors duration-200 hover:bg-gray-100 hover:text-black"
                 >
                   {link.name}
                 </Link>

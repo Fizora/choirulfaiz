@@ -24,7 +24,7 @@ const Hero = () => {
 
       {/* dari absolute inset-0 jadi relative — biar section ikut membesar mengikuti konten */}
       <div className="relative z-10 py-40">
-        <div className="mx-auto w-full max-w-7xl space-y-6 px-4 py-10">
+        <div className="mx-auto w-full max-w-7xl space-y-6 px-4 md:px-8 py-10">
           <p className="uppercase tracking-[0.22em] text-white">
             Independent Web Developer · East Java, Indonesia
           </p>
@@ -44,7 +44,7 @@ const Hero = () => {
             Open to new project
           </div>
           {/* bottom content */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between py-20">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between py-20">
             <div className="flex flex-col md:flex-row md:items-center gap-4">
               <PrimaryButtonLink href="https://wa.me/085235086814">
                 Start a Project

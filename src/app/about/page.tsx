@@ -7,38 +7,40 @@ export default function About() {
     <>
       <Navbar />
       <section className="min-h-screen py-20">
-        {/* layer */}
-        <div className="mx-auto max-w-7xl px-4">
+        <div className="mx-auto max-w-7xl px-4 md:px-8">
           <div className="py-30 space-y-6">
-            <p className="uppercase tracked-[0.22rem] text-gray-500">
+            <p className="uppercase tracking-[0.22em] text-gray-500">
               A little about me
             </p>
-            <h2 className="text-4xl md:text-6xl font-bold text-white">
+            <h2 className="text-4xl md:text-6xl font-bold text-white max-w-4xl">
               I build websites where design and performance work together.
             </h2>
           </div>
-          <div className="flex flex-col md:flex-row md:items-center justify-between py-40 space-y-6">
-            <h2 className="text-4xl md:text-6xl max-w-3xl text-white">
-              I work across three main industries: restaurants & cafés, property
-              & real estate, and household services. Each project starts with
-              understanding the business, its customers, and the action the
-              website needs to drive before moving into design and development.
-            </h2>
-            <div className="max-w-lg text-xl text-gray-400">
-              <p>
-                I'm an independent web developer from East Java, Indonesia,
-                focused on building modern websites for businesses that want a
-                stronger presence online. My work combines thoughtful interface
-                design, performance-focused development, and clear user journeys
-                — so a website doesn't just look good, but helps visitors
-                understand the business and take the next step. I'm currently
-                developing my portfolio while building Lumentify, a web
-                development platform focused on household service businesses.
+
+          <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-12 py-32">
+            {/* Kenapa 3 niche ini — dari sudut pandang founder, bukan pain point pengunjung */}
+            <div className="max-w-2xl space-y-4">
+              <p className="text-sm uppercase tracking-[0.2em] text-orange-400">
+                Why these industries
               </p>
-              <br />
+              <h3 className="text-2xl md:text-4xl font-bold text-white leading-tight">
+                Restaurants, real estate, and household services all live or die
+                by the same thing — how fast someone can trust you and act.
+              </h3>
+            </div>
+
+            {/* Bio — dipersingkat, tapi tetap tentang orangnya, bukan pain point klien */}
+            <div className="max-w-md space-y-6 text-lg text-gray-400 md:pt-2">
               <p>
-                My process is collaborative, direct, and rooted in understanding
-                the real problem before reaching for the solution.
+                Independent web developer, East Java. I focus on interface,
+                performance, and clarity — so a site does more than look good.
+              </p>
+              <p>
+                Currently building my portfolio while developing Lumentify, a
+                platform for household service businesses.
+              </p>
+              <p className="text-white font-medium">
+                Direct process. No unnecessary steps.
               </p>
             </div>
           </div>
