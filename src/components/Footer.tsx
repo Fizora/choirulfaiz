@@ -60,11 +60,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="px-4 mt-16 flex flex-col gap-4 border-t border-white/5 py-8  text-zinc-500 sm:flex-row sm:items-center sm:justify-between text-sm">
+        <div className="px-4 mt-16 flex flex-col gap-4 border-t border-white/5 py-8  text-zinc-500 sm:flex-row sm:items-center sm:justify-between text-lg">
           <p>
             &copy; {new Date().getFullYear()} MCF - DEV. All rights reserved.
           </p>
-          <p>Designed and built with care.</p>
+          <p>Develop website with care.</p>
         </div>
       </div>
     </footer>
