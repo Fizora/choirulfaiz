@@ -48,14 +48,14 @@ export const SecondaryButtonLink = ({
       {children}
       <span className="relative grid h-9 w-9 shrink-0 place-items-center overflow-hidden">
         {/* Default: Arrow. Hover: geser keluar ke kanan lalu hilang (kebalikan primary) */}
-        <LuArrowRight
-          size={18}
-          className="col-start-1 row-start-1 transition-all duration-300 ease-out group-hover:translate-x-4 group-hover:opacity-0"
-        />
-        {/* Default: tersembunyi di kiri. Hover: masuk dari kiri jadi Chevron */}
         <LuChevronRight
           size={18}
-          className="col-start-1 row-start-1 -translate-x-4 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100"
+          className="col-start-1 row-start-1 transition-all duration-300 ease-out group-hover:-translate-x-4 group-hover:opacity-0"
+        />
+        {/* Default: tersembunyi di kanan. Hover: masuk dari kanan jadi Arrow */}
+        <LuArrowRight
+          size={18}
+          className="col-start-1 row-start-1 translate-x-4 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100"
         />
       </span>
     </Link>
