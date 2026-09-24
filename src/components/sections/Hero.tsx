@@ -6,7 +6,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="relative flex flex-col justify-center min-h-screen">
-      <div className="absolute inset-y-0 inset-x-0 flex justify-center">
+      <div className="absolute inset-y-0 inset-x-0 flex justify-center ">
         <div className="relative h-full w-full overflow-hidden">
           <video
             autoPlay
@@ -15,15 +15,15 @@ const Hero = () => {
             playsInline
             preload="auto"
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover object-center opacity-60 rounded mask-b-from-60% mask-t-from-40%"
+            className="absolute inset-0 h-full w-full object-cover object-center opacity-60 rounded mask-b-from-60%"
           >
-            <source src="/video/2.mp4" type="video/mp4" />
+            <source src="/video/4.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
 
       {/* dari absolute inset-0 jadi relative — biar section ikut membesar mengikuti konten */}
-      <div className="relative z-10 py-40">
+      <div className="relative z-10 py-40 bg-black/20">
         <div className="mx-auto w-full max-w-7xl space-y-6 px-4 md:px-8 py-10">
           <p className="uppercase tracking-[0.22em] text-white">
             Independent Web Developer · East Java, Indonesia

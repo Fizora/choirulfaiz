@@ -61,11 +61,13 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full bg-transparent py-4 backdrop-blur-3xl  transition-transform duration-300 ease-in-out  ${
-        shouldHide ? "-translate-y-full" : "translate-y-0"
-      }`}
+      className={`fixed left-0 top-0 z-50 w-full transition-transform duration-300 ease-in-out  ${
+        shouldHide ? "-translate-y-full" : "translate-y-0}"
+      } `}
     >
-      <div className="max-w-7xl mx-auto px-4">
+      <div
+        className={`max-w-7xl m-2 rounded-lg mx-auto px-4 md:px-8 bg-transparent py-4 backdrop-blur-3xl `}
+      >
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="text-xl tracking-tight text-white">
