@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { LuArrowUpRight, LuMenu, LuX } from "react-icons/lu";
 import { navbarLinks } from "./constant/navItems";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,11 +71,19 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="text-xl tracking-tight text-white">
-            <div className="font-black tracking-[0.22em] font-mono">
+          <Link href="/" className="text-xl tracking-tight text-white">
+            <div className="font-black tracking-[0.22em] font-mono flex items-center gap-4">
+              <Image
+                src="/mcf.svg"
+                alt="MCF logo"
+                priority
+                quality={80}
+                height={30}
+                width={30}
+              />
               MCF - DEV
             </div>
-          </a>
+          </Link>
 
           {/* Desktop navigation */}
           <nav className="hidden items-center gap-3 md:flex">

@@ -10,10 +10,13 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Google_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
+  adjustFontFallback: false, // <-- Ubah ke false
+  fallback: ["system-ui", "arial"],
 });
 
 const geistMono = Michroma({
@@ -36,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <LenisProvider>{children}</LenisProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
