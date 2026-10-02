@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { pricingList } from "../constant/data";
 import { LuArrowUpRight } from "react-icons/lu";

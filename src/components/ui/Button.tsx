@@ -1,4 +1,5 @@
-// components/ui/Button.tsx
+"use client";
+
 import Link from "next/link";
 import { LuArrowRight, LuChevronRight } from "react-icons/lu";
 
@@ -57,7 +58,7 @@ export const SecondaryButtonLink = ({
           size={18}
           className="col-start-1 row-start-1 translate-x-4 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100"
         />
-      </span> 
+      </span>
     </Link>
   );
 };

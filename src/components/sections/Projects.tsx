@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { highlightProject } from "../constant/data";

@@ -1,24 +1,23 @@
-import Link from "next/link";
+"use client";
 import { LuArrowRight, LuArrowUpRight, LuChevronRight } from "react-icons/lu";
 import { PrimaryButtonLink, SecondaryButtonLink } from "../ui/Button";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col justify-center min-h-screen">
+    <section className="relative flex flex-col justify-center min-h-screen mask-b-from-60% bg-black/20">
       <div className="absolute inset-y-0 inset-x-0 flex justify-center ">
         <div className="relative h-full w-full overflow-hidden">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
+          <Image
+            src="/img/new-hero.jpeg"
+            alt=""
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover object-center opacity-60 rounded mask-b-from-60%"
-          >
-            <source src="/video/4.mp4" type="video/mp4" />
-          </video>
+            fill
+            preload
+            sizes="100vw"
+            quality={([75, 85] as const).includes(75) ? 75 : 85}
+            className="object-cover object-center opacity-60 rounded mask-b-from-60%"
+          />
         </div>
       </div>
 
