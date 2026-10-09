@@ -48,6 +48,7 @@ const Project = () => {
                   <Image
                     alt="image"
                     fill
+                    loading="lazy"
                     src={`${project.img}`}
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   ></Image>

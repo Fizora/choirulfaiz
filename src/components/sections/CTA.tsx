@@ -10,9 +10,9 @@ const CTA = () => {
           <Image
             alt="Modern business background"
             src="/img/build.jpg"
+            loading="lazy"
             fill
             className="object-cover object-center opacity-60 rounded mask-b-from-50% "
-            priority
           />
         </div>
       </div>
